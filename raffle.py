@@ -32,6 +32,9 @@ class Raffle(BotPlugin):
         if not glob(msg.frm, self.bot_config.BOT_ADMINS):
             return "You're not my dad!"
 
+        if not self.config:
+            return "This plugin needs to be configured... run !plugin config Raffle and follow the directions."
+
         try:
             room = msg.frm.room
         except AttributeError:
