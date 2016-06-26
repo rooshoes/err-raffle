@@ -1,0 +1,7 @@
+[Core]
+Name = Raffle
+Module = raffle
+    
+[Documentation]
+Description = Plugin to pick a random user from the userlist.
+
