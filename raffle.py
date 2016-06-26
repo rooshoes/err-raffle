@@ -28,9 +28,9 @@ class Raffle(BotPlugin):
         super(Raffle, self).configure(config)
 
     @botcmd
-    def spin(self, msg, args):      
+    def spin(self, msg, args):
         if not glob(msg.frm, self.bot_config.BOT_ADMINS):
-            return
+            return "You're not my dad!"
 
         try:
             room = msg.frm.room

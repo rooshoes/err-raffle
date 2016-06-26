@@ -1,1 +1,1 @@
-<span style="font-family: Comic Sans MS; font-size: xx-large;">{% for letter in prefix | list %}<span style="color: {{ loop.cycle('#ff0000', '#ff7f00', '#ffbf00', '#ffff00', '#00ff00', '#00ffff') }};">{{letter}}</span>{% endfor %}{% if winner %} @{{winner}} :frog:{% endif %}</span>
+<span style="font-family: Comic Sans MS; font-size: xx-large;">{% for letter in prefix | list %}<span style="color: {{ loop.cycle('#ff0000', '#ff7f00', '#ffbf00', '#ffff00', '#00ff00', '#00ffff') }};">{{letter}}</span>{% endfor %}{% if winner %} {{winner}} :frog:{% endif %}</span>
